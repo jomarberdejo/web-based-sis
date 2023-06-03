@@ -1,0 +1,137 @@
+
+.footer-container {
+ 
+  width: 100%;
+  background-color: #000;
+  padding: 5px 7px;
+  /*border-top:3px solid #ddd;*/
+}
+
+.footer-container ul{
+  padding: 0;
+  margin: 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+
+}
+
+.footer-wrapper>* {
+  padding: 10px;
+}
+
+.footer-wrapper h3 {
+  margin: 10px 15px;
+}
+
+
+.right-footer {
+  flex: 1;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.right-footer .quick-links {
+  width: 50%;
+}
+
+.about-evsu {
+  flex: 1;
+}
+
+.about-evsu h3 {
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.about-evsu p,
+.quick-links ul li a,
+.contact-us li {
+  line-height: 2.0;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  color: #f2f2f2;
+}
+
+
+
+.quick-links ul li {
+  list-style: none;
+  text-align: center;
+
+}
+
+.quick-links ul li a {
+  text-decoration: none;
+  color: #c9d7f8;
+  font-weight: 400;
+  transition: all 1s ease-in-out;
+}
+
+.quick-links h3,
+.contact-us h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.contact-us ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 2.3 !important;
+
+}
+
+.contact-us ul li a {
+  text-decoration: none;
+  transition: all 1s ease-in-out;
+  color: white;
+}
+
+.quick-links ul li a:hover,
+contact-us ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .right-footer {
+    flex-direction: column;
+  }
+
+  .right-footer .quick-links {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+    .right-footer {
+
+    gap: 1.9rem;
+
+  }
+}

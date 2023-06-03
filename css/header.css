@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  letter-spacing: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  color: #fff;
+  font-size: 18px;
+}
+
+
+.welcome-message{
+  filter: drop-shadow(3px 2px 4px #678493)
+}
+
+     .header{
+       background-color: #2c282887;
+       position: relative;
+       height: 75px;
+     }
+    .admin{
+      position: absolute;
+      top: 18px;
+      right: 15px;
+      border: 2px solid #f2f;
+      padding: 3px 8px;
+      border-radius: 5px;
+      background-color: #00000066;
+    }
+    .admin span{
+      font-size: 1rem;
+      color: #fff;
+    }
+    .admin-profile img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+.main {
+  display: flex;
+  align-items: start;
+}
+
+.sidebar {
+  
+  background-image: linear-gradient(110.3deg, rgb(34, 47, 57) 4.3%, rgba(49, 55, 82, 1) 96.7%);
+ 
+    filter: drop-shadow(3px 2px 4px #121212);
+    position: sticky;
+  
+    top: 0;
+    left: 0;
+   width: 160px;
+   height: 755px;
+}
+
+.sidebar > h2 {
+  color: #fff;
+  margin: 20px auto;
+  padding: 0 10px;
+  font-size: 1.5rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 1.8rem auto;
+  padding: 4px 0px;
+  padding-left: 0;
+ 
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #c9d7f8;
+  font-weight: 500;
+  transition: all 1s ease-in-out;
+}
+
+.sidebar nav ul li a:hover{
+  color: #fff;
+}
+
+.sidebar nav ul li a .active{
+  color: #007aff;
+}
+
+.fa-solid{
+  font-size: 1.9rem;
+}
+.bx{
+  font-size: 2.0rem!important;
+}
+
+.sidebar li a {
+    display: inline-block;
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .sidebar li a i {
+    display: inline-block;
+    transition: transform 0.3s;
+    transform-origin: center center;
+  }
+
+  .sidebar li a:hover i {
+    transform: scale(1.4); /* Adjust the scale factor as needed */
+  }
+

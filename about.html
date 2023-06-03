@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Student Information Management System">
+  <meta name="author" content="Jomar M. Berdejo">
+  
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  
+  <script defer src="js/home.js"></script>
+  <script defer src="js/logout.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/ca7101e501.js" crossorigin="anonymous"></script>
+  
+  <title>Student Information Management System</title>
+  
+  <style>
+    .heading, .subheading{
+      color: #fff;
+    }
+        .icon {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    .heading {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .subheading {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .card {
+      background-color: transparent;
+    }
+    .card-body, .list-group-item{
+       background-color: transparent;
+       color: #fff;
+       border: 1px solid #ccc;
+    }
+  </style>
+  
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="sidebar">
+      <h2 class="welcome-message text-center">EVSU</h2>
+      <nav>
+        <ul>
+<li><a href="index.html"><i class="fa-solid fa-house" title="Homepage"></i></a></li>
+
+          <li><a href="dashboard.html"><i class='fa-solid bx bxs-dashboard ' title="Dashboard"></i></a></li>
+
+          <li><a href="addstudent.html"><i class="fa-solid fa-user-plus" title="Add New Student"></i></a></li>
+
+          <li><a href="studentlist.html" title="View Students"><i class="fa-solid fa-users"></i></a></li>
+          
+          <li><a href="studentreport.html"><i class="fa-solid fa-file-contract" title="Generate Report"></i></a></li>
+
+          <li><a href="about.html"><i class="fa-solid fa-circle-info active" title="About"></i></a></li>
+
+
+          <li><a class="logout-link"><i class="fa-solid fa-right-from-bracket " title="Logout"></i></a></li>
+
+        </ul>
+      </nav>
+    </div>
+
+  
+      
+     <div class="homepage">
+         <div class="header">
+      <span class="title-page"><span class="title">Student Information  System</span>
+      </span>
+      
+      <div class="admin">
+      <div class="admin-profile">
+        <span>hello, admin</span>
+        <img src="images/jomar.jpg" alt="">
+      </div>
+    </div>
+    
+    </div>
+      
+      <div class="main-paragraph">
+ 
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-6">
+      
+        <h2 class="heading"><i class="fas fa-user-graduate icon"></i>EVSU-CC 2nd Year IT Student Information System</h2>
+        <p class="subheading">Empowering IT Students with Efficient Information Management</p>
+        <p>
+           By using the system, administrators can quickly access and update student data, reducing the likelihood of errors and improving the collection and storage of students' data.
+        </p>
+        <p>
+          With a user-friendly interface, the system enables administrators to efficiently track and manage student information and facilitate the enrollment process. It helps simplify administrative tasks and provides easy access to students' data.
+        </p>
+        <p>If you have any questions or feedback about the IT Student Information System, please contact us <a href="mailto:berdejojomar@gmail.com"><i class="fas fa-envelope"></i></a>.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-tasks"></i> Key Features</h5>
+            <ul class="list-group">
+              <li class="list-group-item"><i class="fas fa-user-graduate"></i> Student Information Management</li>
+              <li class="list-group-item"><i class="fas fa-sign-in-alt"></i> Admin Login</li>
+              <li class="list-group-item"><i class="fas fa-users"></i> Total Student Tracking</li>
+              <li class="list-group-item"><i class="fas fa-check-circle"></i> Enrollment Status Tracking</li>
+              <li class="list-group-item"><i class="fas fa-venus-mars"></i> Gender Tracking</li>
+              <li class="list-group-item"><i class="fas fa-search"></i> Student Filtering</li>
+              <li class="list-group-item"><i class="fas fa-file-alt"></i> Report Generation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+</div>
+</div>
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-wrapper">
+        <div class="about-evsu">
+          <h3>About EVSU-CC</h3>
+          <p>EVSU- CC is home to some of the brightest minds in the field of Information Technology, particularly among its 2nd year Bachelor of Science in Information Technology (BSIT) students. These students are equipped with the foundational knowledge and skills necessary to excel in the fast-paced and ever-evolving world of IT.</p>
+
+        </div>
+
+        <div class="right-footer">
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="addstudent.html">Add Student</a></li>
+              <li><a href="studentlist.html">View Students</a></li>
+              <li><a href="studentreport.html">Generate Report</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-us">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa-solid fa-location-dot social"></i> Carigara Leyte</li>
+              <li><a href="mailto:jomar.berdejo@evsu.edu.ph"><i class="fa-solid fa-envelope social"></i> jomar.berdejo@evsu.edu.ph</a></li>
+
+              <li><i class="fa-solid fa-phone social"></i> 09381308925</li>
+            </ul>
+            <ul class="social-icons">
+              <li><a href="https://m.facebook.com/jemax123?wtsid=rdr_0eM2vXLGlVznkjuFA"><i class="fa fa-facebook"></i> </a></li>
+              <li><a href="https://twitter.com/BerdejoJomar/"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://instagram.com/a_quilaaa?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/jomarberdejo">
+                <i class="fa-brands fa-github"></i>
+              </a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

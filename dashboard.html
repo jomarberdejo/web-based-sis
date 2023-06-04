@@ -30,12 +30,35 @@
   
   
   <style>
+
       .card {
       margin: 2rem auto 2rem auto;
-      background-color: transparent;
       border: 1px solid #ddd;
       color: #fff;
+      cursor: pointer;
     }
+    .card:hover {
+      background-color: #ffffff33!important;
+    
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .card-body i{
+      color: orange;
+    }
+    
+    .card-body h2{
+      font-size: 2rem;
+    }
+    .card-link{
+      color: gold!important;
+      text-underline-offset: 4px;
+    }
+    
   </style>
   
 
@@ -49,7 +72,7 @@
         <ul>
 <li><a href="home.html"><i class="fa-solid fa-house" title="Homepage"></i></a></li>
 
-          <li><a href="dashboard.html"><i class='fa-solid bx bxs-dashboard active ' title="Dashboard"></i></a></li>
+          <li><a href="dashboard.html"><i class="bi bi-speedometer active" title="Dashboard"></i> </a></li>
 
           <li><a href="addstudent.html"><i class="fa-solid fa-user-plus" title="Add New Student"></i></a></li>
 
@@ -67,37 +90,51 @@
     </div>
 
      <div class="homepage">
-     <div class="header">
+     <div class="header bg-dark">
       <span class="title-page"><span class="title">Student Information  System</span>
       </span>
       
-      <div class="admin">
+      <div class="right-header">
+      <div class="language">
+          <i class="fa-solid fa-globe"></i>
+          <span>English</span>
+      </div>
+      
+        
       <div class="admin-profile">
-        <span>hello, admin</span>
+        <span>hi, admin</span>
         <img src="images/jomar.jpg" alt="">
       </div>
+   
+    
     </div>
     
     </div>
     
     <div class="main-paragraph">
-
+     
+     <div class="content-title">
+     <h3 class="text-light"><i class="bi bi-speedometer text-warning"></i> Dashboard
+       </h3>
+     </div>
+     
      <div class="container mt-4">
     <div class="row">
       <!-- Total Students Card -->
       <div class="col-lg-4">
-        <div class="card">
+        <div class="card bg-dark ">
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-user-graduate"></i> Total Students</h5>
             <h2 class="card-text" id="totalStudents">0</h2>
-            <a href="#" class="card-link">View</a>
+            <p><a href="#" class="card-link ">View</a>
+            
           </div>
         </div>
       </div>
 
       <!-- Enrolled Students Card -->
       <div class="col-lg-4">
-        <div class="card">
+        <div class="card bg-dark">
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-check-circle"></i> Enrolled</h5>
             <h2 class="card-text" id="enrolledStudents">0</h2>
@@ -108,18 +145,18 @@
 
       <!-- In Progress Card -->
       <div class="col-lg-4">
-        <div class="card">
+        <div class="card bg-dark ">
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-spinner"></i> In Progress</h5>
             <h2 class="card-text" id="inProgress">0</h2>
-            <a href="#" class="card-link">View</a>
+            <a href="#" class="card-link ">View</a>
           </div>
         </div>
       </div>
 
       <!-- Enrollment Rate Card -->
       <div class="col-lg-4">
-        <div class="card">
+        <div class="card bg-dark">
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-chart-line"></i> Enrollment Rate</h5>
             <h2 class="card-text" id="enrollmentRate">0%</h2>
@@ -130,7 +167,7 @@
 
       <!-- Male Students Card -->
       <div class="col-lg-4">
-        <div class="card">
+        <div class="card bg-dark">
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-male"></i> Male Students</h5>
             <h2 class="card-text" id="maleStudents">0</h2>
@@ -141,7 +178,7 @@
 
       <!-- Female Students Card -->
       <div class="col-lg-4">
-        <div class="card">
+        <div class="card bg-dark">
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-female"></i> Female Students</h5>
             <h2 class="card-text" id="femaleStudents">0</h2>

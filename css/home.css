@@ -19,9 +19,6 @@
 }
 
 .title-page {
-  position: absolute;
-  top: 18px;
-  left: 2%;
   color: #fff;
 }
 
@@ -65,6 +62,15 @@
   
 
 }
+
+
+.content-title h3{
+  display: flex;
+  gap: 0.7rem;
+  margin-left: 10px;
+  align-items: center;
+}
+
 
 .main-paragraph-1,
 .main-paragraph-2 {

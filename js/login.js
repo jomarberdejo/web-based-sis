@@ -60,7 +60,7 @@ function validateLogin(event) {
 
 
     let form = document.getElementById("login-form");
-    form.action = "index.html";
+    form.action = "home.html";
 
     // Show the spinner and progress loading bar
     let spinner = document.getElementById('spinner');
@@ -84,6 +84,6 @@ if (username && password) {
 
   // Submit the form
   let form = document.getElementById("login-form")
-  form.action = "index.html";
+  form.action = "home.html";
   form.submit();
 }

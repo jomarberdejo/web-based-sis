@@ -15,7 +15,7 @@ document.querySelector('.logout-link').addEventListener('click', function(e) {
       localStorage.removeItem("username");
       localStorage.removeItem("password");
       // Redirect the user to the login page
-      window.location.href = "login.html";
+      window.location.href = "index.html";
 
     
     }

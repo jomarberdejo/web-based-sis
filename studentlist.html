@@ -66,7 +66,7 @@
         <ul>
 <li><a href="home.html"><i class="fa-solid fa-house" title="Homepage"></i></a></li>
 
-          <li><a href="dashboard.html"><i class="fa-solid fa-gauge-high"></i> </a></li>
+          <li><a href="dashboard.html"><i class="fa-solid fa-gauge-high" title="Dashboard"></i> </a></li>
 
           <li><a href="addstudent.html"><i class="fa-solid fa-user-plus" title="Add New Student"></i></a></li>
 
@@ -119,7 +119,7 @@
       <!-- Search input -->
       <div class="col-lg-6 mt-3">
         <div class="input-group">
-          <input type="text" id="searchInput" class="form-control" placeholder="Search by Student ID or Full Name" oninput="search()">
+          <input type="text" id="searchInput" class="form-control bg-dark text-light" placeholder="Search by Student ID or Full Name" oninput="search()">
         </div>
       </div>
       <!-- Table design for student list -->
@@ -130,7 +130,7 @@
              <div class="__data-table overflow-auto">
               <table id="datatable" class="table table-striped table-bordered">
                 <thead>
-                  <tr>
+                  <tr class="bg-primary">
                     <th>Student ID</th>
                     <th>Full Name</th>
                     <th>Age</th>
@@ -141,7 +141,7 @@
                      <th>Actions</th>
                   </tr>
                 </thead>
-                <tbody id="table">
+                <tbody id="table" class="bg-dark">
                   
                 </tbody>
               </table>

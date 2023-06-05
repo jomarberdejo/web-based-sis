@@ -1,0 +1,152 @@
+*{
+  letter-spacing: normal;
+}
+
+
+/*Homepage*/
+
+.homepage {
+  background-image: url('../background-images/home-bg.jpeg'), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+
+}
+
+.fa-greater-than {
+  font-size: 1.3rem;
+}
+
+.title-page {
+  color: #fff;
+}
+
+.title-page .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: Poppins;
+}
+
+
+
+
+.main-paragraph {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 40px auto;
+  max-width: 80%;
+  height: 600px;
+  overflow-y: auto;
+  
+
+}
+
+
+.content-title h3{
+  display: flex;
+  gap: 0.7rem;
+  margin-left: 19px;
+  align-items: center;
+}
+
+
+.main-paragraph-1,
+.main-paragraph-2 {
+  margin-bottom: 1.4rem;
+  /* add some space between the paragraphs */
+ border-radius: 10px;
+}
+
+.main-paragraph p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+
+}
+
+
+.welcome-message {
+  text-align: center;
+}
+
+.activities {
+  margin-top: 3.5rem;
+  height: auto;
+  
+}
+
+#activities-title-span {
+  color: #F39C12;
+}
+
+.activities-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.container>grp {
+  flex: 1;
+}
+
+.grp {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  /*box-shadow: 12px 12px 29px #151b20, -12px -12px 29px #1a1f26;*/
+  background-image: linear-gradient(110.3deg, rgb(34, 47, 57) 4.3%, rgba(49, 55, 82, 1) 96.7%);
+}
+
+
+.grp:hover {
+    background-image: linear-gradient(110.3deg,#007aff, black 100.7%);
+    
+}
+
+.activities h2 {
+  font-weight: 800;
+  color: #ddd;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: 1.8px;
+}
+
+.grp .img {
+  text-align: center;
+  margin: 10px;
+
+}
+
+.grp .img img {
+  border: 2px solid #ddd;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  transition: transform 2s;
+}
+
+.grp img:hover {
+  transform: translateY(-6px);
+}
+@media screen and (max-width: 700px) {
+  .main-paragraph {
+    padding: 19px;
+  }
+}
+@media (max-width: 420px) {
+  .grp .img img {
+    width: 120px;
+    height: 120px;
+  }
+}
+

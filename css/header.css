@@ -16,62 +16,65 @@ body {
 }
 
 
-.welcome-message{
-  filter: drop-shadow(3px 2px 4px #678493)
+/*Header*/
+
+  .header{
+    background-color: #2c282887;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    color: #ddd;
+  }
+  .title-page{
+    padding: 15px 20px;
+  }
+  
+.right-header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+  .language, .admin-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .language i{
+    color: lightblue;
+    font-size: 1.3rem;
+  }
+  .language span{
+    color: #ddd;
+    font-size: 1rem;
+  }
+  
+
+.admin-profile span{
+  font-size: 1.2rem;
+  color: #ddd;
+}
+.admin-profile img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  
 }
 
-     .header{
-       background-color: #2c282887;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       height: 70px;
-       color: #ddd;
-     }
-     .title-page{
-       padding: 15px 20px;
-     }
-     
-    .right-header {
-      padding: 15px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
-    }
-     .language, .admin-profile{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       gap: 0.5rem;
-     }
-     .language i{
-       color: lightblue;
-       font-size: 1.3rem;
-     }
-     .language span{
-       color: #ddd;
-       font-size: 1rem;
-     }
-     
 
-    .admin-profile span{
-      font-size: 1.2rem;
-      color: #ddd;
-    }
-    .admin-profile img{
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      
-    }
-    
-
+/*Main*/
 
 .main {
   display: flex;
   align-items: start;
 }
+
+
+
+/*Sidebar*/
 
 .sidebar {
   
@@ -79,11 +82,14 @@ body {
  
     filter: drop-shadow(3px 2px 4px #121212);
     position: sticky;
-  
     top: 0;
     left: 0;
-   width: 160px;
+   width: 190px;
    height: 749px;
+}
+
+.welcome-message{
+  filter: drop-shadow(3px 2px 4px #678493)
 }
 
 .sidebar > h2 {
@@ -126,22 +132,19 @@ body {
 .fa-solid{
   font-size: 1.9rem;
 }
-.bi-speedometer{
-  font-size: 2.2rem!important;
-}
 
-.sidebar li a {
+.sidebar nav li a {
     position: relative;
     perspective: 1000px;
+    cursor: pointer;
   }
 
-  .sidebar li a i {
- 
+  .sidebar nav li a i {
     transition: transform 0.3s;
     transform-origin: center center;
   }
 
-  .sidebar li a:hover i {
-    transform: scale(1.4); /* Adjust the scale factor as needed */
+  .sidebar nav li a:hover i {
+    transform: scale(1.4);
   }
 

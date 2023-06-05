@@ -54,7 +54,7 @@ function validateLogin(event) {
     let form = document.getElementById("login-form")
     form.reset()
   } else {
-    // Store the login credentials in local storage
+
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
 
@@ -62,7 +62,7 @@ function validateLogin(event) {
     let form = document.getElementById("login-form");
     form.action = "home.html";
 
-    // Show the spinner and progress loading bar
+
     let spinner = document.getElementById('spinner');
     let progressBar = document.getElementById('progress-bar');
     spinner.style.display = 'flex';
@@ -78,11 +78,11 @@ function validateLogin(event) {
 const username = localStorage.getItem("username");
 const password = localStorage.getItem("password");
 if (username && password) {
-  // Automatically fill in the login form with the stored credentials
+
   document.getElementById("username").value = username;
   document.getElementById("password").value = password;
 
-  // Submit the form
+
   let form = document.getElementById("login-form")
   form.action = "home.html";
   form.submit();

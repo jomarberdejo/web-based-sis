@@ -10,7 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -40,9 +40,8 @@
   padding: 1rem;
   margin: 40px auto;
   max-width: 80%;
-  height: 600px;
+  height: 580px;
   overflow-y: auto;
-  
 
 }
 

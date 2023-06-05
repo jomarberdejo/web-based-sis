@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Student Information Management System">
-  <meta name="author" content="Jomar M. Berdejo">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Student Information Management System">
+    <meta name="author" content="Jomar M. Berdejo">
   
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/home.css">
-  
-  <script defer src="js/home.js"></script>
-  <script defer src="js/logout.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
- 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
-
-  <script src="https://kit.fontawesome.com/ca7101e501.js" crossorigin="anonymous"></script>
-  
-  <title>Student Information Management System</title>
-  
-  <style>
-    .heading, .subheading{
-      color: #fff;
-    }
-        .icon {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-      margin-right: 0.5rem;
-    }
-    .heading {
-      font-size: 1.2rem;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-    }
+    <!-- css links -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
     
-    .subheading {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-    }
-    .card {
-      background-color: transparent;
-    }
-    .card-body, .list-group-item{
-       background-color: transparent;
-       color: #fff;
-       border: 1px solid #ccc;
-    }
-  </style>
+    <!-- js links -->
+    <script defer src="js/home.js"></script>
+    <script defer src="js/logout.js"></script>
+    <script defer src="js/main.js"></script>
+    
   
-
-</head>
+    <!-- dependencies -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
+  
+    <script src="https://kit.fontawesome.com/ca7101e501.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+  
+    
+    <title>Student Information Management System</title>
+   
+    <style>
+      .heading, .subheading{
+    color: #fff;
+  }
+      .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .card {
+    background-color: transparent;
+  }
+  .card-body, .list-group-item{
+     background-color: transparent;
+     color: #fff;
+     border: 1px solid #ccc;
+  }
+    </style>
+   
+  </head>
 
 <body>
   <div class="main">
@@ -65,9 +70,10 @@
       <h2 class="welcome-message text-center">EVSU</h2>
       <nav>
         <ul>
-<li><a href="home.html"><i class="fa-solid fa-house" title="Homepage"></i></a></li>
 
-          <li><a href="dashboard.html"><i class="bi bi-speedometer" title="Dashboard"></i> </a></li>
+          <li><a href="home.html"><i class="fa-solid fa-house" title="Homepage"></i></a></li>
+
+          <li><a href="dashboard.html"><i class="fa-solid fa-gauge-high"></i> </a></li>
 
           <li><a href="addstudent.html"><i class="fa-solid fa-user-plus" title="Add New Student"></i></a></li>
 
@@ -112,7 +118,7 @@
    
 
   <div class="container mt-4">
-    <div class="row">
+    <div class="row ">
       <div class="col-lg-6">
       
         <h2 class="heading"><i class="fas fa-user-graduate icon"></i>EVSU-CC 2nd Year IT Student Information System</h2>
@@ -120,9 +126,11 @@
         <p>
            By using the system, administrators can quickly access and update student data, reducing the likelihood of errors and improving the collection and storage of students' data.
         </p>
+        <br>
         <p>
           With a user-friendly interface, the system enables administrators to efficiently track and manage student information and facilitate the enrollment process. It helps simplify administrative tasks and provides easy access to students' data.
         </p>
+        <br>
         <p>If you have any questions or feedback about the IT Student Information System, please contact us <a href="mailto:berdejojomar@gmail.com"><i class="fas fa-envelope"></i></a>.</p>
       </div>
       <div class="col-lg-6">
@@ -135,8 +143,8 @@
               <li class="list-group-item"><i class="fas fa-users"></i> Total Student Tracking</li>
               <li class="list-group-item"><i class="fas fa-check-circle"></i> Enrollment Status Tracking</li>
               <li class="list-group-item"><i class="fas fa-venus-mars"></i> Gender Tracking</li>
-              <li class="list-group-item"><i class="fas fa-search"></i> Student Filtering</li>
-              <li class="list-group-item"><i class="fas fa-file-alt"></i> Report Generation</li>
+              <li class="list-group-item"><i class="fas fa-search"></i> Student Searching</li>
+              <li class="list-group-item"><i class="fas fa-file-alt"></i> Generate Student Report</li>
             </ul>
           </div>
         </div>

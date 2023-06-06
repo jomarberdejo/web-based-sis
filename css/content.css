@@ -40,16 +40,20 @@
   padding: 1rem;
   margin: 40px auto;
   max-width: 80%;
-  height: 580px;
+  height: 590px;
   overflow-y: auto;
-
 }
+
+.main-paragraph::-webkit-scrollbar{
+  display: none;
+}
+
 
 
 .content-title h3{
   display: flex;
   gap: 0.7rem;
-  margin-left: 19px;
+  margin-left: 30px;
   align-items: center;
 }
 
@@ -57,7 +61,6 @@
 .main-paragraph-1,
 .main-paragraph-2 {
   margin-bottom: 1.4rem;
-  /* add some space between the paragraphs */
  border-radius: 10px;
 }
 

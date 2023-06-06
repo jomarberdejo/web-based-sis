@@ -66,6 +66,21 @@ body {
 }
 
 
+.dropdown-menu{
+  margin-top: 17px!important;
+  min-width: 127px!important;
+  border: none!important;
+
+}
+
+.dropdown-menu button{
+  text-align: center;   
+}
+.dropdown-menu li button:hover{
+  color: orange!important;
+}
+
+
 /*Main*/
 
 .main {
@@ -86,7 +101,7 @@ body {
     top: 0;
     left: 0;
    width: 190px;
-   height: 730px;
+   height: 740px;
 }
 
 .welcome-message{

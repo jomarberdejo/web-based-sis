@@ -76,8 +76,8 @@ body {
 .dropdown-menu a{
   text-align: center;   
 }
-.dropdown-menu li button:hover{
-  color: orange!important;
+.dropdown-menu li a:hover{
+  color: red!important;
 }
 
 

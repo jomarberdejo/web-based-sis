@@ -1,4 +1,5 @@
 
+
 document.querySelector('.logout-link').addEventListener('click', function(e) {
   e.preventDefault();
 
@@ -23,3 +24,12 @@ document.querySelector('.logout-link').addEventListener('click', function(e) {
 
   })
 });
+
+
+const signOut= document.getElementById('signout');
+
+signOut.addEventListener('click', ()=>{
+  localStorage.removeItem("username");
+  localStorage.removeItem("password");
+  window.location.href= "index.html";
+})

@@ -1,10 +1,10 @@
 allData();
     
 function allData() {
-  var table = document.getElementById('table');
+  let table = document.getElementById('table');
   table.innerHTML = '';
 
-  var studentList = JSON.parse(localStorage.getItem('studentList')) || [];
+  let studentList = JSON.parse(localStorage.getItem('studentList')) || [];
 
   studentList.forEach(function (student) {
     table.innerHTML += `

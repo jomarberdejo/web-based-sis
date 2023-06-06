@@ -1,22 +1,22 @@
 // add.html
 
 function save(event) {
-  var studentId = document.getElementById('inputStudentId').value;
-  var fullName = document.getElementById('inputFullName').value;
-  var age = document.getElementById('inputAge').value;
-  var gender = document.getElementById('inputGender').value;
-  var email = document.getElementById('inputEmail').value;
-  var section = document.getElementById('inputSection').value;
-  var status = document.getElementById('inputStatus').value;
+  let studentId = document.getElementById('inputStudentId').value;
+  let fullName = document.getElementById('inputFullName').value;
+  let age = document.getElementById('inputAge').value;
+  let gender = document.getElementById('inputGender').value;
+  let email = document.getElementById('inputEmail').value;
+  let section = document.getElementById('inputSection').value;
+  let status = document.getElementById('inputStatus').value;
 
-  var studentList = JSON.parse(localStorage.getItem('studentList')) || [];
+  let studentList = JSON.parse(localStorage.getItem('studentList')) || [];
 
   if (studentId === "" || fullName === "" || age === "" || gender === "" || email === "" || section === "" || status === "") {
     alert("Please fill out the form");
     return;
   }
 
-  var student = {
+  let student = {
     id: studentList.length > 0 ? studentList[studentList.length - 1].id + 1 : 1,
     studentId: studentId,
     fullName: fullName,
@@ -43,10 +43,10 @@ function save(event) {
 // studentlist.html
 
 function allData() {
-  var table = document.getElementById('table');
+  let table = document.getElementById('table');
   table.innerHTML = '';
 
-  var studentList = JSON.parse(localStorage.getItem('studentList')) || [];
+  let studentList = JSON.parse(localStorage.getItem('studentList')) || [];
 
   studentList.forEach(function (student) {
     table.innerHTML += `
@@ -75,7 +75,7 @@ function allData() {
 }
     allData();
 function removeData(id) {
-  var studentList = JSON.parse(localStorage.getItem('studentList')) || [];
+  let studentList = JSON.parse(localStorage.getItem('studentList')) || [];
   studentList = studentList.filter(function (student) {
     
     return student.id != id;
@@ -86,8 +86,8 @@ function removeData(id) {
 }
 
 function openEditModal(id) {
-  var studentList = JSON.parse(localStorage.getItem('studentList')) || [];
-  var student = studentList.find(function (student) {
+  let studentList = JSON.parse(localStorage.getItem('studentList')) || [];
+  let student = studentList.find(function (student) {
     return student.id == id;
   });
 
@@ -104,14 +104,14 @@ function openEditModal(id) {
 }
 
 function updateData() {
-  var id = document.getElementById('editId').value;
-  var studentId = document.getElementById('editStudentId').value;
-  var fullName = document.getElementById('editFullName').value;
-  var age = document.getElementById('editAge').value;
-  var gender = document.getElementById('editGender').value;
-  var email = document.getElementById('editEmail').value;
-  var section = document.getElementById('editSection').value;
-  var status = document.getElementById('editStatus').value;
+  let id = document.getElementById('editId').value;
+  let studentId = document.getElementById('editStudentId').value;
+  let fullName = document.getElementById('editFullName').value;
+  let age = document.getElementById('editAge').value;
+  let gender = document.getElementById('editGender').value;
+  let email = document.getElementById('editEmail').value;
+  let section = document.getElementById('editSection').value;
+  let status = document.getElementById('editStatus').value;
 
   // Check if any field is empty
   if (studentId === '' || fullName === '' || age === '' || gender === '' || email === '' || section === '' || status === '') {
@@ -119,7 +119,7 @@ function updateData() {
     return;
   }
 
-  var studentList = JSON.parse(localStorage.getItem('studentList')) || [];
+  let studentList = JSON.parse(localStorage.getItem('studentList')) || [];
 
   studentList.forEach(function (student) {
     if (student.id == id) {
@@ -135,23 +135,23 @@ function updateData() {
 
   localStorage.setItem('studentList', JSON.stringify(studentList));
   allData();
-  var modal = document.getElementById('editModal');
+  let modal = document.getElementById('editModal');
   modal.classList.remove('show');
   modal.style.display = 'none';
   document.body.classList.remove('modal-open');
-  var modalBackdrop = document.getElementsByClassName('modal-backdrop')[0];
+  let modalBackdrop = document.getElementsByClassName('modal-backdrop')[0];
   modalBackdrop.parentNode.removeChild(modalBackdrop);
 }
 
 
  function search() {
-      var query = document.getElementById('searchInput').value.toLowerCase();
-      var table = document.getElementById('table');
-      var rows = table.getElementsByTagName('tr');
+      let query = document.getElementById('searchInput').value.toLowerCase();
+      let table = document.getElementById('table');
+      let rows = table.getElementsByTagName('tr');
 
-      for (var i = 0; i < rows.length; i++) {
-        var studentId = rows[i].cells[0].textContent.toLowerCase();
-        var fullName = rows[i].cells[1].textContent.toLowerCase();
+      for (let i = 0; i < rows.length; i++) {
+        let studentId = rows[i].cells[0].textContent.toLowerCase();
+        let fullName = rows[i].cells[1].textContent.toLowerCase();
 
         if (studentId.includes(query) || fullName.includes(query)) {
           rows[i].style.display = '';

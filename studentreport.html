@@ -62,7 +62,8 @@ th, td{
       <h2 class="welcome-message text-center">EVSU</h2>
       <nav>
         <ul>
-<li><a href="home.html"><i class="fa-solid fa-house" title="Homepage"></i></a></li>
+
+          <li><a href="home.html"><i class="fa-solid fa-house" title="Homepage"></i></a></li>
 
           <li><a href="dashboard.html"><i class="fa-solid fa-gauge-high" title="Dashboard"></i> </a></li>
 
@@ -96,7 +97,16 @@ th, td{
         
       <div class="admin-profile">
         <span>hi, admin</span>
-        <img src="images/jomar.jpg" alt="">
+
+   
+        <img src="images/jomar.jpg" alt="" id="profile-img" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> 
+
+          <ul class="dropdown-menu dropdown-menu-end bg-dark">
+            <li><button class="dropdown-item bg-dark text-light" type="button">Sign Out</button></li>
+          </ul>
+     
+        
+        
       </div>
    
     
@@ -117,7 +127,7 @@ th, td{
       <!-- Table design for student list -->
       <div class="col-lg-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body bg-dark">
             <div class="table-responsive">
               <div class="__data-table overflow-auto">
               <table id="datatable" class="table table-striped table-bordered">

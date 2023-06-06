@@ -274,24 +274,24 @@ for (let card of cards){
 
 
 function updateDashboard() {
-    var studentList = JSON.parse(localStorage.getItem('studentList')) || [];
+    let studentList = JSON.parse(localStorage.getItem('studentList')) || [];
 
-    var totalStudents = studentList.length;
-    var enrolledStudents = studentList.filter(function(student) {
+    let totalStudents = studentList.length;
+    let enrolledStudents = studentList.filter(function(student) {
       return student.status === 'Enrolled';
     }).length;
-    var inProgress = studentList.filter(function(student) {
+    let inProgress = studentList.filter(function(student) {
       return student.status === 'In Progress';
     }).length;
 
     // Calculate the enrollment rate
-    var enrollmentRate = totalStudents !== 0 ? (enrolledStudents / totalStudents * 100).toFixed(2) : 0;
+    let enrollmentRate = totalStudents !== 0 ? (enrolledStudents / totalStudents * 100).toFixed(2) : 0;
 
     // Calculate male and female student counts
-    var males = studentList.filter(function(student) {
+    let males = studentList.filter(function(student) {
       return student.gender === 'Male';
     }).length;
-    var females = studentList.filter(function(student) {
+    let females = studentList.filter(function(student) {
       return student.gender === 'Female';
     }).length;
 

@@ -34,53 +34,7 @@
     
     <title>Student Information Management System</title>
    
-    <style>
-      ._form-container {
-    width: 100%;
-    margin: auto;
-  }
 
-  label,
-  input,
-  select,
-  option {
-    color: #fff;
-  }
-
-
-  .card {
-    background-color: #121212;
-    color: #fff;
-    border: 1px solid gray;
-  }
-
-
-
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-  }
-
-  .btn-primary:focus {
-    background-color: #007bff;
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-  }
-
-  a {
-    color: #fff;
-  }
- 
-  .save-button{
-    width: 99%; 
-    margin: 32px auto;
-  }
-    </style>
    
   </head>
 
@@ -110,7 +64,10 @@
       </nav>
     </div>
 
-    <div class="homepage">
+    <div class="homepage _add-student-homepage">
+          <button class="sidebar-toggle">
+            <i class="fa-solid fa-compass"></i>
+             </button>
      <div class="header bg-dark">
       <span class="title-page"><span class="title">Student Information  System</span>
       </span>
@@ -123,7 +80,7 @@
       
         
       <div class="admin-profile">
-        <span>hi, admin</span>
+
 
    
         <img src="images/jomar.jpg" alt="" id="profile-img" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> 
@@ -149,7 +106,7 @@
   <div class="container mt-4">
    
     <!-- Form design -->
-    <div class="row">
+    <div class="row _add-form">
       <div class="col-lg-6 ">
         <div class="card">
           <div class="card-body">
@@ -179,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 ">
+      <div class="col-lg-6 _form-2">
         <div class="card">
           <div class="card-body">
             <form id="form2">

@@ -13,8 +13,8 @@
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  position: relative;
-
+  
+  
 }
 
 .fa-greater-than {
@@ -53,7 +53,7 @@
 .content-title h3{
   display: flex;
   gap: 0.7rem;
-  margin-left: 30px;
+  margin-left: 10px;
   align-items: center;
 }
 
@@ -140,15 +140,190 @@
 .grp img:hover {
   transform: translateY(-6px);
 }
-@media screen and (max-width: 700px) {
+
+   /*Overriding some bootstrap styles*/
+   
+      
+    /*Overriding some bootstrap styles in Add student */
+      ._form-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  ._add-form is:(label,
+  input,
+  select,
+  option) {
+    color: #fff;
+  }
+
+
+  ._add-student-homepage .card {
+    background-color: #121212;
+    color: #fff;
+    border: 1px solid gray;
+  }
+
+
+
+  ._add-student-homepage .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  ._add-student-homepage .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  ._add-student-homepage .btn-primary:focus {
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+
+  ._add-student-homepage a {
+    color: #fff;
+  }
+ 
+  ._add-student-homepage .save-button{
+    width: 99%; 
+    margin: 32px auto;
+  }
+    
+     
+    /*Overriding some bootstrap styles in dashboard */
+     ._dashboard-homepage .card {
+    margin: 2rem auto 2rem auto;
+    border: 1px solid #ddd;
+    color: #fff;
+    cursor: pointer;
+  }
+  ._dashboard-homepage .card:hover {
+    background-color: #ffffff33!important;
+  
+  }
+
+  ._dashboard-homepage .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  ._dashboard-homepage .card-body i{
+    color: orange;
+  }
+  
+    ._dashboard-homepage .card-title{
+      font-size: 1rem;
+    }
+  
+  ._dashboard-homepage .card-body h2{
+    font-size: 2rem;
+  }
+  ._dashboard-homepage .card-link{
+    color: gold!important;
+    text-underline-offset: 4px;
+  }
+    
+  
+    /*Overriding some bootstrap styles in student list*/
+     ._student-list .card{
+    background-color: transparent;
+   border: 1px solid #ddd;
+ }
+ 
+  ._student-list th, td{
+     color:#fff ;
+   text-align: center;
+   vertical-align: middle;
+   
+ }
+._student-list .__actions{
+   display: flex;
+   justify-content: center;
+   gap: 1.2rem;
+ }
+  ._student-list .__data-table{
+     height: 400px;
+     
+   }
+    
+    /*Overriding some bootstrap styles in student report*/
+    
+ ._student-report .card{
+    background-color: transparent;
+    border: 1px solid #ddd;
+  }
+  ._student-report th, td{
+      color:#fff ;
+    text-align: center;
+    vertical-align: middle;
+    
+  }
+  .__actions{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+    ._student-report .__data-table{
+      height: 400px;
+    }
+   
+   
+   
+   /*Overriding some bootstrap styles in about */
+   ._heading, ._subheading{
+    color: #fff;
+  }
+    ._about-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  ._heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  ._subheading {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  ._about-card {
+    background-color: transparent!important;
+  }
+  ._about-card-body, ._about-list-group > *{
+     background-color: transparent!important;
+     color: #fff!important;
+     border: 1px solid #ccc!important;
+  }
+    
+
+
+
+@media  (max-width: 760px) {
   .main-paragraph {
     padding: 19px;
   }
+
 }
 @media (max-width: 420px) {
   .grp .img img {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    
+    object-fit: cover;
+  }
+  
+  .content-title h3{
+    font-size: 1.3rem;
+    
+  }
+  ._key-features{
+    margin-top: 20px!important;
+  }
+  ._form-2{
+    margin-top: 20px!important;
   }
 }
 

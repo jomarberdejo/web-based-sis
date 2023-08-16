@@ -33,3 +33,13 @@ signOut.addEventListener('click', ()=>{
   localStorage.removeItem("password");
   window.location.href= "index.html";
 })
+
+
+const sidebarToggle= document.querySelector('.sidebar-toggle');
+
+const sidebar= document.querySelector('.sidebar');
+
+sidebarToggle.addEventListener('click', ()=> {
+  sidebar.classList.toggle('open');
+})
+

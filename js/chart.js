@@ -68,7 +68,7 @@ const chart = new Chart(ctx, {
       selectedLabels = ["Enrolled", "In Progress"];
     } else if (genderRadio.checked) {
       selectedData = [maleStudents, femaleStudents];
-      selectedLabels = ["Male Students", "Female Students"];
+      selectedLabels = ["Male", "Female"];
     }
 
 

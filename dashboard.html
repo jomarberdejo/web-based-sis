@@ -18,6 +18,8 @@
     <script defer src="js/home.js"></script>
     <script defer src="js/logout.js"></script>
     <script defer src="js/main.js"></script>
+   <script defer src="js/dashboard.js"></script>
+    <script defer src="js/chart.js"></script>
 
   
     <!-- dependencies -->
@@ -32,6 +34,7 @@
     <script src="https://kit.fontawesome.com/ca7101e501.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <title>Student Information Management System</title>
     
@@ -106,16 +109,15 @@
        </h3>
      </div>
      
-     <div class="container mt-4">
-    <div class="row">
+     <div class="container mt-2">
+    <div class="row dashboard-data">
       <!-- Total Students Card -->
       <div class="col-lg-4">
         <div class="card bg-dark ">
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-user-graduate"></i> Total Students</h5>
             <h2 class="card-text" id="totalStudents">0</h2>
-            <p><a href="studentlist.html" class="card-link ">View</a>
-            
+
           </div>
         </div>
       </div>
@@ -126,7 +128,7 @@
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-check-circle"></i> Enrolled</h5>
             <h2 class="card-text" id="enrolledStudents">0</h2>
-            <a href="studentlist.html" class="card-link">View</a>
+
           </div>
         </div>
       </div>
@@ -137,7 +139,7 @@
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-spinner"></i> In Progress</h5>
             <h2 class="card-text" id="inProgress">0</h2>
-            <a href="studentlist.html" class="card-link ">View</a>
+
           </div>
         </div>
       </div>
@@ -148,7 +150,7 @@
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-chart-line"></i> Enrollment Rate</h5>
             <h2 class="card-text" id="enrollmentRate">0%</h2>
-            <a href="studentlist.html" class="card-link">View</a>
+
           </div>
         </div>
       </div>
@@ -159,33 +161,53 @@
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-male"></i> Male Students</h5>
             <h2 class="card-text" id="maleStudents">0</h2>
-            <a href="studentlist.html" class="card-link">View</a>
+
           </div>
         </div>
       </div>
 
       <!-- Female Students Card -->
-      <div class="col-lg-4">
+      <div class="col-lg-4 ">
         <div class="card bg-dark">
           <div class="card-body">
             <h5 class="card-title"><i class="fas fa-female"></i> Female Students</h5>
             <h2 class="card-text" id="femaleStudents">0</h2>
-            <a href="studentlist.html" class="card-link">View</a>
+
           </div>
         </div>
       </div>
-
+      
     </div>
   </div>
 
 
+<div class="chart ">
+<div id="radioButtons">
+  <div>
+  <input type="radio" id="statusRadio" name="dataRadio" value="status" checked>
+  <label for="statusRadio">Status</label>
+</div>
+   <div>
+  <input type="radio" id="genderRadio" name="dataRadio" value="gender">
+  <label for="genderRadio">Gender</label>
+  </div>
+</div>
+
+
+
+        <div class="chart-container">
+          <canvas id="dashboardChart"></canvas>
+        </div>
+        
+        </div>
 
 </div>
 
 </div>
-
+  
+  
 </div>
-
+  
 
   <footer>
     <div class="footer-container">
@@ -247,47 +269,15 @@
   
   
   
-    let cards= document.querySelectorAll('.card');
+
+  
+  
+
+  
+  
 
 
-for (let card of cards){
-    card.addEventListener('click', ()=>{
-        window.location.href= "studentlist.html";
-    })
-}
-
-
-function updateDashboard() {
-    let studentList = JSON.parse(localStorage.getItem('studentList')) || [];
-
-    let totalStudents = studentList.length;
-    let enrolledStudents = studentList.filter(function(student) {
-      return student.status === 'Enrolled';
-    }).length;
-    let inProgress = studentList.filter(function(student) {
-      return student.status === 'In Progress';
-    }).length;
-
-    // Calculate the enrollment rate
-    let enrollmentRate = totalStudents !== 0 ? (enrolledStudents / totalStudents * 100).toFixed(2) : 0;
-
-    // Calculate male and female student counts
-    let males = studentList.filter(function(student) {
-      return student.gender === 'Male';
-    }).length;
-    let females = studentList.filter(function(student) {
-      return student.gender === 'Female';
-    }).length;
-
-    document.getElementById("totalStudents").textContent = totalStudents;
-    document.getElementById("enrolledStudents").textContent = enrolledStudents;
-    document.getElementById("inProgress").textContent = inProgress;
-    document.getElementById("enrollmentRate").textContent = enrollmentRate + "%";
-    document.getElementById("maleStudents").textContent = males;
-    document.getElementById("femaleStudents").textContent = females;
-  }
-
-  updateDashboard();
+ 
   </script>
 </body>
 

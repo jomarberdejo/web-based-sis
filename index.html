@@ -15,8 +15,8 @@
 
   
   <!-- js links -->
-  <script defer src="js/login.js"></script>
-  <script defer src="js/spinner.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/spinner.js"></script>
   
 
   <!-- dependencies -->
@@ -52,12 +52,21 @@
           <hr>
           <div class="form-control " id="user-shakes">
 
-            <span class="icons"><img src="../icons/user-icon.png" alt=""></span><input type="text" id="username" placeholder="Username" autocomplete="off">
+            <span class="icons"><img src="../icons/user-icon.png" alt=""></span>
+            <input 
+            type="text" 
+            id="username" 
+            value= "Admin"
+            placeholder="Username" autocomplete="off">
           </div>
           <div class="form-control " id="pass-shakes">
             <span class="icons"><img src="../icons/pass-icon.png" alt=""></span>
 
-            <input type="password" id="password" placeholder="Password">
+            <input 
+            type="password" 
+            id="password"
+            value= "EVSUCC"
+            placeholder="Password">
 
             <img src="../icons/show.png" alt="" id="toggle-password" onclick="togglePasswordVisibility()"></span>
           </div>

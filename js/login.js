@@ -72,10 +72,7 @@ function validateLogin(event) {
     form.action = "home.html";
 
 
-    let spinner = document.getElementById('spinner');
-    let progressBar = document.getElementById('progress-bar');
-    spinner.style.display = 'flex';
-    progressBar.style.display = 'block';
+    
 
     form.submit();
   }

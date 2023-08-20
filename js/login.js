@@ -1,3 +1,12 @@
+    // Check if already logged in
+
+const username = localStorage.getItem("username");
+
+const password = localStorage.getItem("password");
+if (username && password) {
+  window.location.href= "home.html"
+}
+
 function togglePasswordVisibility() {
   const passwordInput = document.getElementById("password");
   const togglePasswordButton = document.querySelector("#toggle-password");
@@ -73,13 +82,6 @@ function validateLogin(event) {
 }
 
 
-    // Check if already logged in
 
-const username = localStorage.getItem("username");
-
-const password = localStorage.getItem("password");
-if (username && password) {
-  window.location.href= "home.html"
-}
   
 

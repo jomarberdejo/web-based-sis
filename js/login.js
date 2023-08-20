@@ -72,19 +72,14 @@ function validateLogin(event) {
   }
 }
 
-// Check if already logged in
+
+    // Check if already logged in
 
 const username = localStorage.getItem("username");
 
 const password = localStorage.getItem("password");
 if (username && password) {
-
-  document.getElementById("username").value = username;
-  document.getElementById("password").value = password;
-
-
-  let form = document.getElementById("login-form")
-  form.action = "home.html";
-  form.submit();
+  window.location.href= "home.html"
 }
+  
 

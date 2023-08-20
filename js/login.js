@@ -72,10 +72,10 @@ function validateLogin(event) {
   }
 }
 
+// Check if already logged in
 
-
-// Check if the user is already logged in
 const username = localStorage.getItem("username");
+
 const password = localStorage.getItem("password");
 if (username && password) {
 
@@ -87,3 +87,4 @@ if (username && password) {
   form.action = "home.html";
   form.submit();
 }
+

@@ -69,8 +69,9 @@
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
-
+ 
 }
+
 
 
 .welcome-message {
@@ -199,6 +200,7 @@
 
 
 
+
 #dashboardChart {
   width: 100%;
   
@@ -215,12 +217,6 @@
     margin: auto;
   }
 
-  ._add-form is:(label,
-  input,
-  select,
-  option) {
-    color: #fff;
-  }
 
 
   ._add-student-homepage .card {
@@ -288,8 +284,8 @@
   ._dashboard-homepage .card-link{
     color: gold!important;
     text-underline-offset: 4px;
+
   }
-    
   
     /*Overriding some bootstrap styles in student list*/
      ._student-list .card{
@@ -365,7 +361,12 @@
   }
     
 
-
+@media(max-width: 991px){
+  ._form-2, ._key-features{
+    margin-top: 2rem!important;
+  }
+    
+}
 
 @media  (max-width: 760px) {
   .main-paragraph {
